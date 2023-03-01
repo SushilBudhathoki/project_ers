@@ -1,0 +1,18 @@
+{% extends 'layouts/master.html' %} {% block title %} Employee - Detail {% endblock %} {% block content %}
+
+<div class="container mt-5">
+    
+
+<h1> This is employee Detail page </h1>
+<a href="{% url 'emp-index' %}" class="btn btn-primary">Back</a>
+<hr>
+<div class="class card">
+    <div class="class card-header"><h3>{{ data.full_name }}</h3></div>
+    <div class="class card-body">
+        <h6>{{ data.email }}</h6>
+        <h6>{{ data.contact }}</h6>
+
+    </div>
+</div>
+
+{% endblock %}
